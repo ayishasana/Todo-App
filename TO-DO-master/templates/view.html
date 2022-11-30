@@ -1,0 +1,21 @@
+{% extends "index1.html" %}
+{% block content %}
+
+
+ <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">WELCOME</h5>
+      <form method="post">
+          {% csrf_token %}
+
+
+  {{data}}
+ <button type="submit" class="btn btn-primary">ADD</button>
+        </form>
+
+
+  </div>
+</div>
+ {% endblock %}
+
